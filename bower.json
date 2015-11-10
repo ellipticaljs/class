@@ -1,7 +1,7 @@
 {
   "name": "elliptical-class",
   "description": "es5 Class Abstraction",
-  "version":"1.0.0",
+  "version": "1.0.1",
   "main": "dist/elliptical.class.js",
   "authors": [
     "S. Francis"
@@ -19,5 +19,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "elliptical-utils": "~2.0.0"
+  }
 }
