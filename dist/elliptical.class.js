@@ -16,12 +16,10 @@
     }
 }(this, function (utils) {
 
-    var makeArray = utils.array.makeArray;
-    var isFunction = utils.object.isFunction;
+    var isPlainObject = utils.object.isPlainObject;
     var isArray = Array.isArray;
-    var concatArgs = utils.array.concatArgs;
 
-    return function(){
+    var extend= function(){
         // copy reference to target object
         var target = arguments[0] || {},
             i = 1,
@@ -59,8 +57,8 @@
                     }
 
                     // Recurse if we're merging object literal values or arrays
-                    if (deep && copy && (object.isPlainObject(copy) || Array.isArray(copy))) {
-                        var clone = src && (object.isPlainObject(src) || Array.isArray(src)) ? src : Array.isArray(copy) ? [] : {};
+                    if (deep && copy && (isPlainObject(copy) || isArray(copy))) {
+                        var clone = src && (isPlainObject(src) || isArray(src)) ? src : isArray(copy) ? [] : {};
 
                         // Never move original objects, clone them
                         target[name] = extend(deep, clone, copy);
@@ -75,7 +73,9 @@
 
         // Return the modified object
         return target;
-    }
+    };
+
+    return extend;
 }));
 
 /*
