@@ -11,7 +11,7 @@
     } else {
         // Browser globals (root is window)
         root.__tmp9z=root.__tmp9z || {};
-        root.__tmp9z.extend=factory(root.elliptical.utils)
+        root.__tmp9z.extend=factory(root.elliptical.utils);
         root.returnExports = root.__tmp9z.extend;
     }
 }(this, function (utils) {
