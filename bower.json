@@ -1,7 +1,7 @@
 {
   "name": "elliptical-class",
   "description": "es5 Class Abstraction",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "dist/elliptical.class.js",
   "authors": [
     "S. Francis"
