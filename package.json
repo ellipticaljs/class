@@ -1,12 +1,12 @@
 {
   "name": "elliptical-class",
   "description": "es5 Class Abstraction",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "author": "S. Francis",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ellipticaljs/elliptical-class.git"
+    "url": "https://github.com/ellipticaljs/class.git"
   },
   "dependencies":{
     "elliptical-utils": "git+https://github.com/ellipticaljs/utils.git"
